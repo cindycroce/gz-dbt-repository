@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: gz_raw_data
+    database: project-a9786291-b642-4e23-a55
+    schema: gz_raw_data
+    loader: bigquery
+    description: raw data of product,sales and ship
+
+    tables:
+      - name: raw_gz_product
+        description: product purchase prices
+
+      - name: raw_gz_sales
+        description: Sales with orders products quantities and revenue
+
+      - name: raw_gz_ship
+        description: shipping fees and logistics costs by order
