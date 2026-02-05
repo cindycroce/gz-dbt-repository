@@ -23,7 +23,7 @@ sources:
         description: Sales with orders products quantities and revenue
         tests:
           - unique:
-              column_name: (orders_id || '_' || product_id)
+              column_name: (orders_id || '_' || pdt_id)
         columns:
           - name: date_date
             description: date of order
@@ -31,7 +31,7 @@ sources:
             description: id of the order
             tests:
               - not_null
-          - name: product_id
+          - name: pdt_id
             description: id of the product in the order
             tests:
               - not_null
